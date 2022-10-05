@@ -1,25 +1,25 @@
 ## Getting Started
 
 1 - Create  a database
-create database named ebs;
+create database ebs;
 
 2 - Create login table:
-meter_no varchar(20), username varchar(30), password(30), user varchar(30);
+login (meter_no VARCHAR(20), username VARCHAR(30), password VARCHAR(30), user VARCHAR(30));
 
 3 -  Create customer table:
-name varchar (30), meter varchar(30), address varchar(50), state varchar(30), email varchar(30), phone varchar(20);
+name VARCHAR (30), meter VARCHAR(30), address VARCHAR(50), state VARCHAR(30), email VARCHAR(30), phone VARCHAR(20);
 
 4 - Create meter_info table:
-meter_number varchar(20), meter_location varchar(20), meter_type varchar(20), phase_code varchar(20), bill_type varchar(20), days varchar(20);
+meter_number VARCHAR(20), meter_location VARCHAR(20), meter_type VARCHAR(20), phase_code VARCHAR(20), bill_type VARCHAR(20), days VARCHAR(20);
 
 5 - Create tax table:
-cost_per_unit varchar(20), meter_rent varchar(20), service_charge varchar(20), service_tax varchar(20), swacch_bharat_cess varchar(20), fixed_tax varchar(20);
+cost_per_unit VARCHAR(20), meter_rent VARCHAR(20), service_charge VARCHAR(20), service_tax VARCHAR(20), swacch_bharat_cess VARCHAR(20), fixed_tax VARCHAR(20);
 
 6 - Insert some value in the table tax:
-('9', '47', '22', '57', '6', ''18,);
+('9', '47', '22', '57', '6', '18');
 
 7 - Create bill table:
-meter varchar(20), month varchar(20), units varchar (20), total_bill varchar(20), status varchar(20);
+meter VARCHAR(20), month VARCHAR(20), units VARCHAR (20), total_bill VARCHAR(20), status VARCHAR(20);
 
 
 
