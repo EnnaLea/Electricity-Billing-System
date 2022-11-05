@@ -76,7 +76,3 @@ public class About extends JFrame implements ActionListener {
 
 }
 
-
-// public class About {
-    
-// }
