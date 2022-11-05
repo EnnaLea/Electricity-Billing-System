@@ -59,10 +59,18 @@ public class About extends JFrame implements ActionListener {
 
         setBounds(700, 220, 500, 550);
 
-        setLayout(nill);
+        setLayout(null);
         setVisible(true);
 
 
+    }
+
+    public void actionPerformed(ActionEvent e){
+        dispose();
+    }
+
+    public static void main(String[] args) {
+        new About().setVisible(true);
     }
 
 
