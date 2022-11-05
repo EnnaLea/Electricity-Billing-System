@@ -26,10 +26,18 @@ public class About extends JFrame implements ActionListener {
 
         Font f = new Font("RALWAY", Font.BOLD, 180 );
         setFont(f);
-        
+
     }
 
-
+    s = "               About Project \n                         "
+        + "\n Electricity Billing System is a software-based application"
+        + " developed in Javab "
+        +
+        +
+        +
+        +
+        +
+    ;
 }
 
 
