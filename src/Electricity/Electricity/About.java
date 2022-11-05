@@ -27,17 +27,45 @@ public class About extends JFrame implements ActionListener {
         Font f = new Font("RALWAY", Font.BOLD, 180 );
         setFont(f);
 
+        s = "               About Project \n                         "
+                + "\n Electricity Billing System is a software-based application"
+                + " developed in Java programming language. The projec aims at serving "
+                + "the departement of electricity by computering the billling system."
+                + " It mainly focuses on the calculation of Unite consued during the"
+                + " specified time and the money to be paid to electricity offices"
+                + "This computerized suste will make the overall billing system easy."
+                + " acceccible, comfrtable and effective for consumers. \n\n";
+
+        TextArea t1 = new TextArea(s, 10, 40, Scrollbar.VERTICAL);
+        t1.setEditable(false);
+        t1.setBounds(20, 100, 450, 300);
+
+        add(t1);
+
+        Font f1 = new Font("RALWAY", Font.BOLD, 16);
+        t1.setFont(f1);
+
+        Container contentPane = this.getContentPane();
+        t1 = new TextArea();
+
+        JLabel l1 = new JLabel("About Project");
+        add(l1);
+
+        l1.setBounds(170, 10, 180, 80);
+        l1.setForeground(Color.red);
+
+        Font f2 = new Font("RALWAY", Font.BOLD, 20);
+        l1.setFont(f2);
+
+        setBounds(700, 220, 500, 550);
+
+        setLayout(nill);
+        setVisible(true);
+
+
     }
 
-    s = "               About Project \n                         "
-        + "\n Electricity Billing System is a software-based application"
-        + " developed in Javab "
-        +
-        +
-        +
-        +
-        +
-    ;
+
 }
 
 
