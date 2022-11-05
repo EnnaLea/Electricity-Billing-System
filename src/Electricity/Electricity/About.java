@@ -29,12 +29,12 @@ public class About extends JFrame implements ActionListener {
 
         s = "               About Project \n                         "
                 + "\n Electricity Billing System is a software-based application"
-                + " developed in Java programming language. The projec aims at serving "
-                + "the departement of electricity by computering the billling system."
-                + " It mainly focuses on the calculation of Unite consued during the"
-                + " specified time and the money to be paid to electricity offices"
-                + "This computerized suste will make the overall billing system easy."
-                + " acceccible, comfrtable and effective for consumers. \n\n";
+                + " developed in Java programming language. The project aims is to serving "
+                + "the departement of electricity by computering the billing system."
+                + " It mainly focuses on the calculation of Units consumed during the"
+                + " specified time and the money to be paid to the electricity offices."
+                + "This computerized suste will make the overall billing system easy,"
+                + " accessible, comfotable and effective for consumers. \n\n";
 
         TextArea t1 = new TextArea(s, 10, 40, Scrollbar.VERTICAL);
         t1.setEditable(false);
