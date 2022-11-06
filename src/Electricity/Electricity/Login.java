@@ -78,6 +78,48 @@ public class Login extends JFrame implements ActionListener{
 
     }
 
-    
+    public void actionPerformed(ActionEvent ae){
+        if(ae.getSource() == b1){
+            try{
+                Conn c  = new Conn();
+                String a = tf1.getText();
+                String b = pf2.getText();
+                String user = c1.getSelectedItem();
+                String q = "select * frame login where username = '"+a+"' and password = '"+b+"' and user = '"+user+"'";
+                ResultSet rs = c.s.executeQuery(q);
+
+                if (rs.next()) {
+                    String meter = rs.getString("meter_no");
+                    new Project(meter, user).setVisible(true);
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid login");
+                    tf1.setText("");
+                    pf2.setText("");
+
+                }
+
+            } catch (Exception e){
+                e.printStackerTrace();
+                System.out.println("error: "+e);
+            }
+            
+        }
+
+        else if (ae.getSource() == b2) {
+            this.setVisible(false);
+
+        } 
+
+        else if(ae.getSource() == b3){
+            this.setVisible(false);
+            new Login().setVisible(true);
+
+        }
+    }
+
+    public static void main(String[] args) {
+        new Login().setVisible(true);
+    }
 
 }
