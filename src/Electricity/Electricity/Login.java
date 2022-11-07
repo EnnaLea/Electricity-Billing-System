@@ -100,7 +100,7 @@ public class Login extends JFrame implements ActionListener{
                 }
 
             } catch (Exception e){
-                e.printStackerTrace();
+                e.printStackTrace();
                 System.out.println("error: "+e);
             }
             
